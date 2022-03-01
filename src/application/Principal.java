@@ -1,7 +1,6 @@
 package application;
 	
 import java.sql.SQLException;
-
 import dbConnection.DBManagerConnection;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
