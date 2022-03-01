@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="761.0" stylesheets="@style/informes.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane prefHeight="110.0" prefWidth="751.0">
+                     <center>
+                        <BorderPane prefHeight="110.0" prefWidth="507.0" styleClass="info_registros" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets right="5.0" />
+                           </BorderPane.margin>
+                           <left>
+                              <FlowPane alignment="CENTER" prefHeight="110.0" prefWidth="118.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label text="L">
+                                       <font>
+                                          <Font name="System Bold" size="31.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ibros">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets />
+                                       </FlowPane.margin>
+                                       <padding>
+                                          <Insets top="5.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </FlowPane>
+                           </left>
+                           <center>
+                              <FlowPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                           </center>
+                           <right>
+                              <FlowPane alignment="CENTER" prefHeight="110.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="34.0" prefWidth="132.0" text="0">
+                                       <font>
+                                          <Font name="System Bold" size="32.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </FlowPane>
+                           </right>
+                        </BorderPane>
+                     </center>
+                     <right>
+                        <BorderPane prefHeight="110.0" prefWidth="351.0" styleClass="info_registros" BorderPane.alignment="CENTER">
+                           <left>
+                              <FlowPane alignment="CENTER" prefHeight="110.0" prefWidth="155.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label text="O">
+                                       <font>
+                                          <Font name="System Bold" size="31.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets top="4.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label text="piniones">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets />
+                                       </FlowPane.margin>
+                                       <padding>
+                                          <Insets top="5.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </FlowPane>
+                           </left>
+                           <right>
+                              <FlowPane alignment="CENTER" prefHeight="110.0" prefWidth="132.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="34.0" prefWidth="132.0" text="0">
+                                       <font>
+                                          <Font name="System Bold" size="32.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </FlowPane>
+                           </right>
+                           <center>
+                              <FlowPane prefHeight="110.0" prefWidth="61.0" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                     </right>
+                  </BorderPane>
+                  <BorderPane prefHeight="110.0" prefWidth="751.0">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                     <center>
+                        <BorderPane prefHeight="110.0" prefWidth="316.0" styleClass="info_registros" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                           <left>
+                              <FlowPane alignment="CENTER" prefHeight="110.0" prefWidth="125.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label text="L">
+                                       <font>
+                                          <Font name="System Bold" size="31.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ibreta">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets />
+                                       </FlowPane.margin>
+                                       <padding>
+                                          <Insets top="5.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </FlowPane>
+                           </left>
+                           <center>
+                              <FlowPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                           </center>
+                           <right>
+                              <FlowPane alignment="CENTER" prefHeight="110.0" prefWidth="121.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="34.0" prefWidth="132.0" text="0">
+                                       <font>
+                                          <Font name="System Bold" size="32.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </FlowPane>
+                           </right>
+                        </BorderPane>
+                     </center>
+                  </BorderPane>
+                  <BorderPane prefHeight="110.0" prefWidth="751.0">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                     <center>
+                        <BorderPane prefHeight="110.0" prefWidth="384.0" styleClass="info_registros" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                           <left>
+                              <FlowPane alignment="CENTER" prefHeight="110.0" prefWidth="151.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label text="F">
+                                       <font>
+                                          <Font name="System Bold" size="31.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="avoritos">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets />
+                                       </FlowPane.margin>
+                                       <padding>
+                                          <Insets top="5.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </FlowPane>
+                           </left>
+                           <center>
+                              <FlowPane prefHeight="110.0" prefWidth="204.0" BorderPane.alignment="CENTER" />
+                           </center>
+                           <right>
+                              <FlowPane alignment="CENTER" prefHeight="110.0" prefWidth="121.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="34.0" prefWidth="132.0" text="0">
+                                       <font>
+                                          <Font name="System Bold" size="32.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </FlowPane>
+                           </right>
+                        </BorderPane>
+                     </center>
+                  </BorderPane>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

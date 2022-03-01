@@ -1,0 +1,57 @@
+*
+{
+	margin: 0px;
+	paddin: 0px;
+}
+
+.banner
+{
+	background-color: #3C3F4A;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.titulos
+{
+	font-family: Arial;
+	color: #EB974E;
+	font-size: 30px;
+	padding-left: 50px;
+	padding-top: 50px;
+}
+.personal
+{
+	margin-left: 30px;
+	margin-top: 10px;
+	font-family: Arial;
+	color: black;
+	font-size: 22px;
+	list-style-type: none;
+}
+
+.gmail
+{
+	margin-left: 20px;
+	margin-top: 10px;
+	font-family: Arial;
+	color: #EAC551;
+	font-size: 20px;
+}
+
+table, th, td 
+{
+	margin-left: 70px;
+	margin-top: 10px;
+	padding: 10px;
+	font-family: Arial;
+	color: black;
+	font-size: 19px;
+	list-style-type: none;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.cerrar
+{
+	margin-bottom: 40px
+}

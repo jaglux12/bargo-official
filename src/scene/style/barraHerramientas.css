@@ -1,0 +1,18 @@
+.barraHerramientas
+{
+	-fx-background-color:   black  ;
+}
+
+.botonMas
+{
+	
+	-fx-background-radius: 6;
+	-fx-background-color: black;
+	-fx-border-color: black;
+	-fx-border-width: 0 0 0 0 ;
+	
+}
+.botonMas:hover
+{
+	-fx-background-color:   #6a6865  ;
+}

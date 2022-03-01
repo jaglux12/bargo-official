@@ -1,0 +1,20 @@
+.panelBase
+{
+	-fx-background-color:#ecf0f1;
+}
+.panelPro_lecturas
+{
+	-fx-background-color:#ffffff;
+	-fx-background-radius: 10;
+	-fx-bacground-effect: dropshadow( gaussian,  #000000  ,19,0.4,0,0);	
+}
+.panelPro_lecturas:hover
+{
+	-fx-effect: dropshadow(gaussian,  #000000 ,20,0.6,0,0);
+}
+
+.panelNorte
+{
+	-fx-background-color: #ffffff;
+	-fx-background-radius: 10;
+}

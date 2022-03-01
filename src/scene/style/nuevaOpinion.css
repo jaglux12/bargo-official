@@ -1,0 +1,36 @@
+.panelPrincipal
+{
+	-fx-background-color: white;
+}
+.titulo
+{
+	-fx-background-color:linear-gradient(to left,#e0743b,   #fce504 );
+}
+
+.botones
+{
+	-fx-background-color: #febc00;
+}
+.botones:hover
+{
+	-fx-effect: dropshadow(gaussian,black,10,0.1,0,0);
+}
+
+.botonBusqueda
+{
+	-fx-background-radius: 5;
+}
+.botonBusqueda:hover
+{
+	-fx-effect: dropshadow(gaussian,black,10,0.1,0,0);
+}
+
+.fieldEntrada
+{
+	-fx-background-radius: 6;
+}
+
+.fieldEntrada:hover
+{
+	-fx-effect: innershadow(gaussian, black,5,0,0,0);
+}

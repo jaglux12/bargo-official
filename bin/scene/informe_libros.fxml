@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="761.0" style="-fx-background-color: -fx-background-color:linear-gradient(to left,#e0743b,   #fce504 );;" stylesheets="@style/informes.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <top>
+            <BorderPane prefHeight="117.0" prefWidth="751.0" BorderPane.alignment="CENTER">
+               <left>
+                  <FlowPane alignment="CENTER" prefHeight="117.0" prefWidth="203.0" style="-fx-background-color: #c1caca;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="37.0" prefWidth="111.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="33.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </FlowPane>
+               </left>
+            </BorderPane>
+         </top>
+      </BorderPane>
+   </center>
+   <top>
+      <FlowPane alignment="CENTER_RIGHT" prefHeight="94.0" prefWidth="761.0" style="-fx-background-color: linear-gradient(to left, #b1e947 , #4deaec );;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="L" textFill="WHITE">
+               <FlowPane.margin>
+                  <Insets />
+               </FlowPane.margin>
+               <font>
+                  <Font name="System Bold" size="41.0" />
+               </font>
+            </Label>
+            <Label text="ibros" textFill="WHITE">
+               <font>
+                  <Font size="33.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets right="50.0" />
+               </FlowPane.margin>
+               <padding>
+                  <Insets top="7.0" />
+               </padding>
+            </Label>
+         </children>
+      </FlowPane>
+   </top>
+</BorderPane>
