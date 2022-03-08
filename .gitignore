@@ -2,3 +2,4 @@ build.fxbuild
 .classpath
 .settings
 bin
+.project
