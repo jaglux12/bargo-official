@@ -1,0 +1,4 @@
+# Configuraciones de ejecución
+
+--module-path "F:\%\%\javafx-sdk-16\lib" 
+                    --add-modules javafx.controls,javafx.fxml,javafx.web
