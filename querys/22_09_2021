@@ -1,3 +1,0 @@
-UPDATE libros  set NOMBRE='1ssad',  AUTOR='wsad', GENERO='asd'
-, EDITORIAL='asd', FORMATO='asd', N_PAG=2, CANTIDAD=1 WHERE ID=4
-asdd
