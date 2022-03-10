@@ -1,19 +1,19 @@
 .panelPrincipal
 {
-	-fx-background-color: white;
+	-fx-background-color: #535251;
 }
 .titulo
 {
-	-fx-background-color:linear-gradient(to left,#e0743b,   #fce504 );
+	
 }
 
 .botones
 {
-	-fx-background-color: #febc00;
+	-fx-background-color: gray;
 }
 .botones:hover
 {
-	-fx-effect: dropshadow(gaussian,black,10,0.1,0,0);
+	-fx-effect: innershadow(gaussian, black,5,0,0,0);
 }
 
 .botonBusqueda
@@ -25,9 +25,28 @@
 	-fx-effect: dropshadow(gaussian,black,10,0.1,0,0);
 }
 
+.text-area{
+	text-area-background: #625f5e;
+	-fx-text-fill: white;
+}
+
+.text-area .content {
+    -fx-background-color: text-area-background ;
+    
+}
+
+.date-picker .text-field {
+	-fx-control-inner-background: #625f5e;
+}
+.date-picker {
+	-fx-text-fill: white;
+}
+
 .fieldEntrada
 {
 	-fx-background-radius: 6;
+	-fx-background-color: #625f5e;
+	-fx-text-fill: white;
 }
 
 .fieldEntrada:hover

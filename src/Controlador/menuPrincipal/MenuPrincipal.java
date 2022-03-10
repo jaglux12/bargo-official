@@ -52,7 +52,16 @@ public class MenuPrincipal implements Initializable
 	public Button bBorrar = new Button();
 	
 	@FXML
+	public Button bEditar = new Button();
+	
+	@FXML
+	public Button bVerFavoritos = new Button();
+	
+	@FXML
 	public Button bNuevaProxLectura = new Button();
+	
+	@FXML
+	public Button bInformes = new Button();
 	
 	@FXML
 	public Button bNuevoFavorito = new Button();
@@ -163,6 +172,8 @@ public class MenuPrincipal implements Initializable
 					try
 					{
 						tLibros.actualizarTabla_Libros(tRegistros);
+						System.out.println(tRegistros.getStylesheets());
+						tRegistros.getStylesheets().add("/scene/style/style-menuPrincipal.css");
 					}
 					catch(SQLException ex)
 					{
@@ -395,6 +406,12 @@ public class MenuPrincipal implements Initializable
 		 */
 		bNuevoLibro.setTooltip(ayudasB.gettTNuevoLibro());
 		bNuevaOpinion.setTooltip(ayudasB.gettTOpinion());
+		bNuevaProxLectura.setTooltip(ayudasB.gettTNuevaProxLectura());
+		bBorrar.setTooltip(ayudasB.gettBorrar());
+		bEditar.setTooltip(ayudasB.gettEditar());
+		bNuevoFavorito.setTooltip(ayudasB.gettNuevoFavorito());
+		bVerFavoritos.setTooltip(ayudasB.gettVerFavoritos());
+		bInformes.setTooltip(ayudasB.gettInformes());
 		
 	}
 	

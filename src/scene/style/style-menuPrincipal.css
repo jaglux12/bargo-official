@@ -1,6 +1,6 @@
 .panelBase
 {
-	-fx-background-color:#ecf0f1;
+	-fx-background-color: #ecf0f1;
 }
 .panelPro_lecturas
 {
@@ -17,4 +17,12 @@
 {
 	-fx-background-color: #ffffff;
 	-fx-background-radius: 10;
+}
+
+.table-view {
+	-fx-background-color: transparent;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
 }

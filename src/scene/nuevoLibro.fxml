@@ -24,17 +24,17 @@
          <right>
             <BorderPane prefHeight="404.0" prefWidth="115.0" BorderPane.alignment="CENTER">
                <center>
-                  <VBox alignment="CENTER" prefHeight="396.0" prefWidth="129.0">
+                  <VBox alignment="TOP_CENTER" prefHeight="391.0" prefWidth="103.0">
                      <children>
-                        <Button fx:id="bGuardar" mnemonicParsing="false" onAction="#guardar" prefHeight="35.0" prefWidth="93.0" style="-fx-background-color: gray;" styleClass="botones" text="Guardar" textFill="WHITE">
+                        <Button fx:id="bGuardar" mnemonicParsing="false" onAction="#guardar" prefHeight="35.0" prefWidth="93.0" styleClass="botones" text="Guardar" textFill="WHITE">
                            <VBox.margin>
-                              <Insets bottom="10.0" />
+                              <Insets bottom="10.0" top="11.0" />
                            </VBox.margin>
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Button>
-                        <Button fx:id="bBorrar" mnemonicParsing="false" onAction="#limpiarContenido" prefHeight="35.0" prefWidth="93.0" style="-fx-background-color: #d1bd71;" styleClass="botones" text="Borrar">
+                        <Button fx:id="bBorrar" mnemonicParsing="false" onAction="#limpiarContenido" prefHeight="35.0" prefWidth="93.0" styleClass="botones" text="Borrar" textFill="WHITE">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -56,14 +56,14 @@
             </BorderPane>
          </right>
          <top>
-            <FlowPane alignment="CENTER_RIGHT" prefHeight="63.0" prefWidth="606.0" styleClass="titulo" BorderPane.alignment="CENTER">
+            <FlowPane alignment="BOTTOM_LEFT" prefHeight="63.0" prefWidth="606.0" styleClass="titulo" BorderPane.alignment="CENTER">
                <children>
                   <Label text="N" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="46.0" />
+                        <Font size="46.0" />
                      </font>
                      <FlowPane.margin>
-                        <Insets />
+                        <Insets left="20.0" />
                      </FlowPane.margin>
                   </Label>
                   <Label text="uevo Libro" textFill="WHITE">
