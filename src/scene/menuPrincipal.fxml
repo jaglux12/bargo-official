@@ -11,10 +11,14 @@
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="1097.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.menuPrincipal.MenuPrincipal">
@@ -34,104 +38,199 @@
          <center>
             <ToolBar prefHeight="80.0" prefWidth="825.0" styleClass="barraHerramientas" stylesheets="@style/barraHerramientas.css">
               <items>
-                <Button fx:id="bNuevoLibro" alignment="BOTTOM_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#nuevoLibro" prefHeight="45.0" prefWidth="62.0" styleClass="botonMas" text="Libro" textFill="WHITE">
+                <Button fx:id="bNuevoLibro" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#nuevoLibro" prefHeight="57.0" prefWidth="55.0" styleClass="botonMas" textFill="#e4e1e1">
                      <graphic>
                         <ImageView fitHeight="41.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../img/barraHerramientas/nuevoLibro.png" />
                            </image>
+                           <effect>
+                              <Lighting specularExponent="20.93" surfaceScale="0.45">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.9882352948188782" green="0.929411768913269" blue="0.7568627595901489" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
                         </ImageView>
                      </graphic>
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button fx:id="bNuevaOpinion" alignment="BOTTOM_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#nuevaOpinion" prefHeight="65.0" prefWidth="76.0" styleClass="botonMas" text="Opinión" textFill="WHITE">
+                  <Button fx:id="bNuevaOpinion" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#nuevaOpinion" prefHeight="57.0" prefWidth="55.0" styleClass="botonMas" textFill="#e4e1e1">
                      <graphic>
                         <ImageView fitHeight="34.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../img/barraHerramientas/nuevaOpinion.png" />
                            </image>
+                           <effect>
+                              <Lighting surfaceScale="0.45">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.8947368264198303" green="0.6738141775131226" blue="0.6296296119689941" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
                         </ImageView>
                      </graphic>
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button fx:id="bNuevaProxLectura" alignment="BOTTOM_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#nuevaProxLectura" prefHeight="65.0" prefWidth="88.0" styleClass="botonMas" text="Pendiente" textFill="WHITE">
+                  <Button fx:id="bNuevaProxLectura" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#nuevaProxLectura" prefHeight="57.0" prefWidth="55.0" styleClass="botonMas" textFill="#e4e1e1">
                      <graphic>
                         <ImageView fitHeight="34.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../img/barraHerramientas/nuevaProxLectura.png" />
                            </image>
+                           <effect>
+                              <Lighting surfaceScale="0.0">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.9868420958518982" green="0.9868420958518982" blue="0.9868420958518982" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
                         </ImageView>
                      </graphic>
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Separator opacity="0.19" orientation="VERTICAL" prefHeight="47.0" prefWidth="0.0">
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="70.0" prefWidth="12.0">
                      <padding>
                         <Insets bottom="20.0" top="20.0" />
                      </padding></Separator>
-                  <Button fx:id="bNuevoFavorito" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#nuevoFavorito" prefHeight="48.0" prefWidth="49.0" styleClass="botonMas" textFill="WHITE">
+                  <Button fx:id="bNuevoFavorito" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#nuevoFavorito" prefHeight="57.0" prefWidth="55.0" styleClass="botonMas" textFill="WHITE">
                      <graphic>
                         <ImageView fitHeight="34.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../img/verFavoritos/nuevoFavorito.png" />
                            </image>
+                           <effect>
+                              <Lighting surfaceScale="0.0">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.48355263471603394" green="0.8231908082962036" blue="0.8289473652839661" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
                         </ImageView>
                      </graphic>
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#editaRegistro" prefHeight="48.0" prefWidth="49.0" styleClass="botonMas" textFill="WHITE">
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#editaRegistro" prefHeight="57.0" prefWidth="55.0" styleClass="botonMas" textFill="WHITE">
                      <graphic>
                         <ImageView fitHeight="29.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../img/barraHerramientas/editar.png" />
                            </image>
+                           <effect>
+                              <Lighting surfaceScale="0.45">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.8157894611358643" green="0.8157894611358643" blue="0.8157894611358643" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
                         </ImageView>
                      </graphic>
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button fx:id="bBorrar" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#borraRegistro" prefHeight="48.0" prefWidth="49.0" styleClass="botonMas" textFill="WHITE">
+                  <Button fx:id="bBorrar" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#borraRegistro" prefHeight="57.0" prefWidth="55.0" styleClass="botonMas" textFill="WHITE">
                      <graphic>
                         <ImageView fitHeight="29.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../img/barraHerramientas/borrar.png" />
                            </image>
+                           <effect>
+                              <Lighting surfaceScale="0.45">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.7894737124443054" green="0.7894737124443054" blue="0.7894737124443054" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
                         </ImageView>
                      </graphic>
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Separator opacity="0.19" orientation="VERTICAL" prefHeight="39.0" prefWidth="0.0">
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="70.0" prefWidth="12.0">
                      <padding>
                         <Insets bottom="20.0" top="20.0" />
                      </padding></Separator>
-                  <Button alignment="BOTTOM_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#verFavoritos" prefHeight="65.0" prefWidth="82.0" styleClass="botonMas" text="Favoritos" textFill="WHITE">
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#verFavoritos" prefHeight="57.0" prefWidth="55.0" styleClass="botonMas" textFill="WHITE">
                      <graphic>
-                        <ImageView fitHeight="34.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="39.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../img/barraHerramientas/favoritos.png" />
                            </image>
                         </ImageView>
                      </graphic>
-                     <font>
-                        <Font size="14.0" />
-                     </font>
                   </Button>
-                  <Button alignment="BOTTOM_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#click_menuInformes" prefHeight="65.0" prefWidth="82.0" styleClass="botonMas" text="Informes" textFill="WHITE">
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#click_menuInformes" prefHeight="57.0" prefWidth="55.0" styleClass="botonMas" textFill="WHITE">
                      <graphic>
-                        <ImageView fitHeight="34.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="39.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../img/barraHerramientas/bInformes.png" />
                            </image>
+                           <effect>
+                              <Lighting diffuseConstant="0.37" specularConstant="1.05" specularExponent="0.0" surfaceScale="5.47">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.16447368264198303" green="0.7894737124443054" blue="0.5498903393745422" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
                         </ImageView>
                      </graphic>
                      <font>
@@ -140,7 +239,7 @@
                   </Button>
                   <FlowPane alignment="CENTER" prefHeight="70.0" prefWidth="287.0">
                      <children>
-                        <Label text="Busqueda:" textFill="WHITE">
+                        <Label text="Buscar:" textFill="WHITE">
                            <font>
                               <Font size="16.0" />
                            </font>
@@ -148,14 +247,14 @@
                               <Insets right="10.0" />
                            </FlowPane.margin>
                         </Label>
-                        <ComboBox fx:id="cbBusquedas" nodeOrientation="LEFT_TO_RIGHT" onAction="#clic_cambioFiltro" prefHeight="29.0" prefWidth="178.0" style="-fx-background-color: white;" styleClass="listaOpciones" />
+                        <ComboBox fx:id="cbBusquedas" nodeOrientation="LEFT_TO_RIGHT" onAction="#clic_cambioFiltro" prefHeight="29.0" prefWidth="178.0" promptText="tipo.." style="-fx-background-color: white;" styleClass="listaOpciones" />
                      </children>
                   </FlowPane>
               </items>
             </ToolBar>
          </center>
          <top>
-            <MenuBar prefHeight="25.0" prefWidth="913.0" BorderPane.alignment="CENTER">
+            <MenuBar prefHeight="25.0" prefWidth="913.0" style="-fx-background-color: #c8c8c8;" BorderPane.alignment="CENTER">
               <menus>
                 <Menu mnemonicParsing="false" text="Menu">
                      <items>
@@ -289,7 +388,7 @@
                         <Insets left="5.0" />
                      </FlowPane.margin>
                   </ImageView>
-                  <Label fx:id="lbCantLibros" text="100" textFill="#030303">
+                  <Label fx:id="lbCantLibros" text="000" textFill="#030303">
                      <font>
                         <Font size="19.0" />
                      </font>
@@ -310,7 +409,7 @@
                         <Insets />
                      </FlowPane.margin>
                   </ImageView>
-                  <Label fx:id="lbCantOpiniones" text="100">
+                  <Label fx:id="lbCantOpiniones" text="000">
                      <font>
                         <Font size="19.0" />
                      </font>
@@ -328,7 +427,7 @@
                         <Image url="@../img/barrEstado/eProxLecturas.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="lbCantProxLecturas" text="100">
+                  <Label fx:id="lbCantProxLecturas" text="000">
                      <font>
                         <Font size="19.0" />
                      </font>
