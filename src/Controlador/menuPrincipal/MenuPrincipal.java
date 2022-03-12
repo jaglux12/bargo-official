@@ -20,6 +20,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.Menu;
 import javafx.scene.control.TableView;
+import modelosTablas.LibrOP;
 import modelosTablas.Libro;
 import modelosTablas.Opiniones;
 import modelosTablas.Prox_Lecturas;
@@ -393,6 +394,7 @@ public class MenuPrincipal implements Initializable
 		 * Cantidad de registros
 		 */
 		_confCantRegistros();
+		tRegistros.getItems().add(new LibrOP());
 		
 		/*
 		 * Opciones de filtro de búsqueda
