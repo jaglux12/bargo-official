@@ -9,7 +9,6 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.SeparatorMenuItem?>
-<?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.effect.Light.Distant?>
@@ -27,14 +26,6 @@
       <BorderPane style="-fx-background-color: #535251;" stylesheets="@style/style-menuPrincipal.css" BorderPane.alignment="CENTER">
          <center>
             <TableView fx:id="tRegistros" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-              <columns>
-                <TableColumn prefWidth="540.0" text="C2">
-                     <columns>
-                        <TableColumn prefWidth="75.0" text="Column X" />
-                     </columns>
-                  </TableColumn>
-                <TableColumn prefWidth="75.0" text="C1" />
-              </columns>
                <BorderPane.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" />
                </BorderPane.margin>

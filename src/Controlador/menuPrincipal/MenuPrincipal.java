@@ -173,8 +173,6 @@ public class MenuPrincipal implements Initializable
 					try
 					{
 						tLibros.actualizarTabla_Libros(tRegistros);
-						System.out.println(tRegistros.getStylesheets());
-						tRegistros.getStylesheets().add("/scene/style/style-menuPrincipal.css");
 					}
 					catch(SQLException ex)
 					{
@@ -394,7 +392,6 @@ public class MenuPrincipal implements Initializable
 		 * Cantidad de registros
 		 */
 		_confCantRegistros();
-		tRegistros.getItems().add(new LibrOP());
 		
 		/*
 		 * Opciones de filtro de búsqueda
