@@ -256,7 +256,7 @@
                   </Button>
                   <FlowPane alignment="CENTER" prefHeight="70.0" prefWidth="287.0">
                      <children>
-                        <Label text="Buscar:" textFill="WHITE">
+                        <Label text="Buscar:" textFill="#8a8786">
                            <font>
                               <Font size="16.0" />
                            </font>
@@ -264,7 +264,7 @@
                               <Insets right="10.0" />
                            </FlowPane.margin>
                         </Label>
-                        <ComboBox fx:id="cbBusquedas" nodeOrientation="LEFT_TO_RIGHT" onAction="#clic_cambioFiltro" prefHeight="29.0" prefWidth="178.0" promptText="tipo.." style="-fx-background-color: #d1d1d0;" styleClass="listaOpciones" />
+                        <ComboBox fx:id="cbBusquedas" nodeOrientation="LEFT_TO_RIGHT" onAction="#clic_cambioFiltro" prefHeight="29.0" prefWidth="178.0" promptText="tipo.." />
                      </children>
                   </FlowPane>
               </items>
