@@ -2,12 +2,14 @@
 {
 	-fx-background-color: #ecf0f1;
 }
+
 .panelPro_lecturas
 {
 	-fx-background-color:#ffffff;
 	-fx-background-radius: 10;
 	-fx-bacground-effect: dropshadow( gaussian,  #000000  ,19,0.4,0,0);	
 }
+
 .panelPro_lecturas:hover
 {
 	-fx-effect: dropshadow(gaussian,  #000000 ,20,0.6,0,0);
@@ -23,6 +25,7 @@
     -fx-background-color:  linear-gradient(to bottom,  #625f5e ,#6d6d6c);
     -fx-background-radius: 7px 7px 7px 7px;
 }
+
 .table-view .label{
 	-fx-text-fill: transparent;
 }
