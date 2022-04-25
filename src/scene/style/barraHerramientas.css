@@ -25,7 +25,7 @@
 }
 
 .combo-box-base {
-	-fx-background-color: #e0743b;
+	-fx-background-color: #767473;
 	-fx-background-insets: 0 0 -1 0, 0, 1, 2;
 	-fx-padding: -1;
 }
